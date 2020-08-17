@@ -57,6 +57,7 @@ class Graph extends Component<IProps, {}> {
       elem.setAttribute('row-pivots', '["timestamp"]');
       elem.setAttribute('columns', '["ratio", "lower_bound", "upper_bound", "trigger_alert"]');
       elem.setAttribute('aggregates', JSON.stringify({
+        price : 'avg',
         price_abc: 'avg',
         price_def: 'avg',
         ratio:'avg',
